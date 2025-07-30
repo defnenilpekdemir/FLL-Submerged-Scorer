@@ -1,63 +1,87 @@
-# FLL-Submerged-Scorer
+# FLL Submerged Scorer
 
-An interactive scoring system tailored for the **FIRST® LEGO® League 2024/25 season: Submerged**.  
-Built entirely with HTML, CSS, and vanilla JavaScript to provide a fast, local, and accessible solution for referees, teams, and developers.
+A lightweight and user-friendly scoring interface for the **FIRST® LEGO® League 2024/25 season: Submerged**.
 
-## Problem Statement
+Built entirely with Python using the `tkinter` library, this local desktop tool allows referees, teams, and mentors to calculate scores quickly and accurately — no browser, no internet, and no installation needed beyond Python itself.
 
-Official FLL score sheets are often static and require manual calculation or third-party tools.  
-This project addresses the need for a **fully local, intuitive, and mission-accurate scorer** that works directly in the browser — without any dependencies, internet access, or installations.
+---
+
+## Why This Project?
+
+Official FLL score sheets are often static and require manual calculation or third-party platforms.  
+This project offers a **fully offline, intuitive, and mission-accurate scorer** tailored specifically for the 2024/25 season.
+
+It's ideal for:
+- Teams practicing at home or at events  
+- Mentors needing a quick scoring simulation  
+- Referees looking for a fast, no-hassle tool  
+
+---
 
 ## How It Works
 
-- Dynamically calculates total score based on selected missions
-- Interface mirrors the 2024/25 Submerged mission rulebook
-- Pure JavaScript DOM manipulation handles real-time updates
-- Lightweight and beginner-friendly
+- Interactive desktop interface with mission checkboxes  
+- Each mission's value is based on the official FLL rulebook  
+- Real-time score updates with each selection  
+- Fully standalone — runs as a single `.py` file  
+- No dependencies or frameworks needed  
+
+---
 
 ## Tech Stack
 
-- HTML – layout and structure  
-- CSS – styling and responsiveness  
-- JavaScript – logic and interactivity
+- Python 3.x  
+- Tkinter (built-in GUI module)
 
-👉 Runs directly by opening `index.html` in any browser. No installation required.
+---
 
 ## File Structure
 
 ```
 FLL-Submerged-Scorer/
-├── index.html      # Core UI interface
-├── style.css       # Layout and styling
-└── script.js       # Scoring logic
+├── scorer.py       # Main app (interface + logic)
+└── README.md       # Project documentation
 ```
 
+---
 
-## Installation
+## ▶Running the App
+
+Make sure Python 3 is installed.
+
+Then:
 
 ```bash
-git clone https://github.com/defnenilpekdemir/FLL-Submerged-Scorer.git
-cd FLL-Submerged-Scorer
+python scorer.py
 ```
 
-Open `index.html` in your browser to launch the app.
+The scorer interface will open. Select your mission achievements and see the total score update instantly.
 
-## Planned Features
+No installation, no server, no browser required.
 
-- Tooltips for mission rules  
-- Light/Dark mode switch  
-- Exportable score report (CSV/PDF)  
-- Mission group score breakdown  
-- Accessibility improvements
+---
 
-## Educational Goals
+## Educational Purpose
 
-This project was developed as part of an outreach initiative to teach  
-junior students the basics of:
+This project is also used to teach beginners:
 
-- Web development (HTML/CSS/JS)  
-- UI/UX principles  
-- Logical structuring of rule-based systems  
-- Real-world application of FLL scoring methods
+- Basic GUI development in Python  
+- Translating real-world rules into code logic  
+- Working with user input and dynamic output  
+- Using open-source tools for robotics support  
 
+---
 
+## Upcoming Features
+
+- Mission tooltips and rule summaries  
+- Score export (CSV or PDF)  
+- Theming options (light/dark mode)  
+- Improved layout and accessibility  
+
+---
+
+## Contributing
+
+This project was originally developed for internal team use but is open to feedback or improvements.  
+Feel free to fork it, improve it, and share it with your team or community.
